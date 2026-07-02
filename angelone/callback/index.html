@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Angel One callback placeholder</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f6f8fa; color: #24292f; }
+    main { max-width: 720px; margin: 24px; padding: 28px; border: 1px solid #d0d7de; border-radius: 8px; background: #ffffff; }
+    h1 { margin-top: 0; font-size: 1.5rem; }
+    code { padding: 2px 5px; border-radius: 4px; background: #f0f3f6; }
+    .warning { color: #9a3412; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; color: #c9d1d9; }
+      main { background: #161b22; border-color: #30363d; }
+      code { background: #21262d; }
+      .warning { color: #f59e0b; }
+    }
+  </style>
+  <script>
+    (function () {
+      if (window.location.search || window.location.hash) {
+        window.history.replaceState(null, document.title, window.location.pathname);
+      }
+    }());
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Angel One callback placeholder</h1>
+    <p>This page exists only to provide a public HTTPS redirect URL for the local AlgoTradingV2 SmartAPI setup.</p>
+    <p>No token, code, state, verifier, or query value is stored, displayed, forwarded, or processed by this page.</p>
+    <p>Use this redirect URL in SmartAPI: <code>https://atuldc.github.io/angelone/callback/</code></p>
+    <p>AlgoTradingV2 currently uses API key, PIN, and TOTP login. It does not consume browser redirect tokens.</p>
+    <p class="warning">Do not use this static page for production OAuth secrets. GitHub Pages may receive the initial request URL in normal service logs.</p>
+  </main>
+</body>
+</html>
